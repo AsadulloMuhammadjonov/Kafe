@@ -100,10 +100,11 @@
         <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DynamicRTL>false</DynamicRTL>
+        <UsePackages>false</UsePackages>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <LinkPackageStatics>fs21.lib;fsDB21.lib</LinkPackageStatics>
-        <LinkPackageImports>rtl.bpi;vcl.bpi;dbrtl.bpi;adortl.bpi;vclimg.bpi;vcldb.bpi;frx21.bpi;vclx.bpi;frxDB21.bpi</LinkPackageImports>
+        <LinkPackageStatics>rtl.lib;vcl.lib;dbrtl.lib;adortl.lib;vclimg.lib;vcldb.lib;frx21.lib;fs21.lib;vclx.lib;frxDB21.lib;fsDB21.lib</LinkPackageStatics>
         <ILINK_LibraryPath>C:\Program Files (x86)\FastReports\LibD21\;$(BDS)\lib\win32\release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
@@ -265,27 +266,27 @@
             <DependentOn>UnitXodimQoshish.h</DependentOn>
             <BuildOrder>13</BuildOrder>
         </CppCompile>
+        <FormResources Include="UnitSotilganlar.dfm"/>
         <FormResources Include="UnitStol.dfm"/>
         <FormResources Include="UnitStolAlmashtirish.dfm"/>
-        <FormResources Include="UnitStollar.dfm"/>
+        <FormResources Include="UnitOmborKirim.dfm"/>
         <FormResources Include="UnitOmborOzgartirish.dfm"/>
         <FormResources Include="UnitOmborQoshish.dfm"/>
-        <FormResources Include="UnitSotilganlar.dfm"/>
+        <FormResources Include="UnitStollar.dfm"/>
         <FormResources Include="UnitXodimlar.dfm"/>
         <FormResources Include="UnitXodimOzgartirish.dfm"/>
         <FormResources Include="UnitXodimQoshish.dfm"/>
         <FormResources Include="UnitTolov.dfm"/>
         <FormResources Include="UnitTolovv.dfm"/>
         <FormResources Include="UnitXisobot.dfm"/>
-        <FormResources Include="UnitOmborKirim.dfm"/>
         <FormResources Include="Unit2.dfm"/>
         <FormResources Include="Unit3.dfm"/>
         <FormResources Include="UnitKarkulOzgartirish.dfm"/>
         <FormResources Include="Unit1.dfm"/>
+        <FormResources Include="UnitKarkulQoshish.dfm"/>
         <FormResources Include="UnitMenyu.dfm"/>
         <FormResources Include="UnitMenyuOzgartirish.dfm"/>
         <FormResources Include="UnitMenyuqoshish.dfm"/>
-        <FormResources Include="UnitKarkulQoshish.dfm"/>
         <FormResources Include="UnitKarkulyatsiya.dfm"/>
         <FormResources Include="UnitKategoriya.dfm"/>
         <FormResources Include="UnitKirish.dfm"/>
