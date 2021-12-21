@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitOmborKirimH
+#define UnitOmborKirimH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormOmborKirim : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormOmborKirim(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormOmborKirim *FormOmborKirim;
+//---------------------------------------------------------------------------
+#endif

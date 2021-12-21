@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitXodimQoshishH
+#define UnitXodimQoshishH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormXodimQoshish : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormXodimQoshish(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormXodimQoshish *FormXodimQoshish;
+//---------------------------------------------------------------------------
+#endif

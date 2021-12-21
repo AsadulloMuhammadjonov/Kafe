@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitOmborOzgartirish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormOmborOzgartirish *FormOmborOzgartirish;
+//---------------------------------------------------------------------------
+__fastcall TFormOmborOzgartirish::TFormOmborOzgartirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

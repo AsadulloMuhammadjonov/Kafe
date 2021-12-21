@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitSotilganlarH
+#define UnitSotilganlarH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormSotilganlar : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormSotilganlar(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormSotilganlar *FormSotilganlar;
+//---------------------------------------------------------------------------
+#endif

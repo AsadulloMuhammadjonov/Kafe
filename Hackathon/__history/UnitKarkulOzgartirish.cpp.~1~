@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitKarkulOzgartirish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormKarkulOzgartirish *FormKarkulOzgartirish;
+//---------------------------------------------------------------------------
+__fastcall TFormKarkulOzgartirish::TFormKarkulOzgartirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

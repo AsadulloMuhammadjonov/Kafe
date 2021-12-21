@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitMenyuOzgartirishH
+#define UnitMenyuOzgartirishH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormMenyuOzgartirish : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormMenyuOzgartirish(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormMenyuOzgartirish *FormMenyuOzgartirish;
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitKarkulyatsiya.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormKarkulyatsiya *FormKarkulyatsiya;
+//---------------------------------------------------------------------------
+__fastcall TFormKarkulyatsiya::TFormKarkulyatsiya(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

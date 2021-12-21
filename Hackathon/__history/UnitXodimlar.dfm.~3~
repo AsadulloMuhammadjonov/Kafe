@@ -1,0 +1,110 @@
+object FormXodimlar: TFormXodimlar
+  Left = 0
+  Top = 0
+  Caption = 'FormXodimlar'
+  ClientHeight = 538
+  ClientWidth = 995
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 29
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 112
+    Width = 995
+    Height = 426
+    Align = alBottom
+    DataSource = DataModule2.DataSourceXodimlar
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -24
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = [fsBold]
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'id'
+        Title.Alignment = taCenter
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Fish'
+        Title.Alignment = taCenter
+        Width = 170
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Parol'
+        Title.Alignment = taCenter
+        Width = 83
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Huquq'
+        Title.Alignment = taCenter
+        Width = 148
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Tel'
+        Title.Alignment = taCenter
+        Width = 264
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Ish_Xaqqi'
+        Title.Alignment = taCenter
+        Width = 157
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Xaqqi'
+        Title.Alignment = taCenter
+        Width = 130
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 105
+    Top = 23
+    Width = 209
+    Height = 65
+    Caption = 'Qo'#39'shish'
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 369
+    Top = 23
+    Width = 209
+    Height = 65
+    Caption = 'O'#39'chirish'
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 633
+    Top = 23
+    Width = 209
+    Height = 65
+    Caption = 'O'#39'zgartirish'
+    TabOrder = 3
+  end
+end

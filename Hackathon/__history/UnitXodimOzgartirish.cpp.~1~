@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitXodimOzgartirish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormXodimOzgartirish *FormXodimOzgartirish;
+//---------------------------------------------------------------------------
+__fastcall TFormXodimOzgartirish::TFormXodimOzgartirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

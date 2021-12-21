@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitStolH
+#define UnitStolH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormStol : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormStol(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormStol *FormStol;
+//---------------------------------------------------------------------------
+#endif

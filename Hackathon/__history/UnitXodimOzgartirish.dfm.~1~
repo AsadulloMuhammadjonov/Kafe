@@ -1,0 +1,19 @@
+object FormXodimOzgartirish: TFormXodimOzgartirish
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'FormXodimOzgartirish'
+  ClientHeight = 212
+  ClientWidth = 457
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -27
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 33
+end

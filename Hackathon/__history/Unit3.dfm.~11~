@@ -1,0 +1,146 @@
+object FormOmbor: TFormOmbor
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'FormOmbor'
+  ClientHeight = 682
+  ClientWidth = 1004
+  Color = clBtnFace
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Times New Roman'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 26
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 194
+    Width = 1004
+    Height = 488
+    Align = alBottom
+    DataSource = DataModule2.DataSourceMenyu
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -27
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = [fsBold]
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'id'
+        Title.Alignment = taCenter
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Nomi'
+        Title.Alignment = taCenter
+        Width = 336
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Miqdor'
+        Title.Alignment = taCenter
+        Width = 177
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Narxi'
+        Title.Alignment = taCenter
+        Width = 244
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Summa'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Birligi'
+        Title.Alignment = taCenter
+        Width = 214
+        Visible = True
+      end>
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1004
+    Height = 194
+    Align = alClient
+    TabOrder = 1
+    ExplicitWidth = 994
+    ExplicitHeight = 184
+    object Button1: TButton
+      Left = 192
+      Top = 14
+      Width = 185
+      Height = 74
+      Caption = 'Qo'#39'shish'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 383
+      Top = 14
+      Width = 185
+      Height = 74
+      Caption = 'O'#39'zgartirish'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 574
+      Top = 14
+      Width = 185
+      Height = 74
+      Caption = 'O'#39'chirish'
+      TabOrder = 2
+      OnClick = Button3Click
+    end
+    object LabeledEdit1: TLabeledEdit
+      Left = 0
+      Top = 125
+      Width = 985
+      Height = 34
+      Alignment = taCenter
+      EditLabel.Width = 229
+      EditLabel.Height = 26
+      EditLabel.Caption = 'Nomi bo'#39'yicha qidiruv'
+      TabOrder = 3
+      TextHint = 'Nomi o'#39'yicha qidiruv'
+      OnChange = LabeledEdit1Change
+    end
+    object Button4: TButton
+      Left = 864
+      Top = 0
+      Width = 130
+      Height = 49
+      Caption = 'Chiqish'
+      TabOrder = 4
+      OnClick = Button4Click
+    end
+  end
+end

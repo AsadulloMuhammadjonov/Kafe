@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitMenyuH
+#define UnitMenyuH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormMenyu : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormMenyu(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormMenyu *FormMenyu;
+//---------------------------------------------------------------------------
+#endif

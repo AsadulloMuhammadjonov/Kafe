@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitXodimlarH
+#define UnitXodimlarH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormXodimlar : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormXodimlar(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormXodimlar *FormXodimlar;
+//---------------------------------------------------------------------------
+#endif

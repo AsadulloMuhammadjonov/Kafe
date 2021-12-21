@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitKarkulyatsiya.h"
+#include "Unit1.h"
+#include "Unit2.h"
+#include "Unit3.h"
+#include "UnitKategoriya.h"
+#include "UnitMenyu.h"
+#include "UnitMenyuOzgartirish.h"
+#include "UnitMenyuqoshish.h"
+#include "UnitOmborOzgartirish.h"
+#include "UnitOmborQoshish.h"
+#include "UnitSotilganlar.h"
+#include "UnitXodimlar.h"
+#include "UnitXodimOzgartirish.h"
+#include "UnitXodimQoshish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormKarkulyatsiya *FormKarkulyatsiya;
+//---------------------------------------------------------------------------
+__fastcall TFormKarkulyatsiya::TFormKarkulyatsiya(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

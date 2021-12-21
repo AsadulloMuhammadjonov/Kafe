@@ -1,0 +1,69 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include <tchar.h>
+//---------------------------------------------------------------------------
+USEFORM("UnitMenyu.cpp", FormMenyu);
+USEFORM("UnitKategoriya.cpp", FormKategoriya);
+USEFORM("UnitXodimlar.cpp", FormXodimlar);
+USEFORM("UnitSotilganlar.cpp", FormSotilganlar);
+USEFORM("Unit3.cpp", FormOmbor);
+USEFORM("Unit2.cpp", DataModule2); /* TDataModule: File Type */
+USEFORM("Unit1.cpp", FormBosh);
+USEFORM("UnitMenyuqoshish.cpp", FormMenyuQoshish);
+USEFORM("UnitMenyuOzgartirish.cpp", FormMenyuOzgartirish);
+USEFORM("UnitOmborQoshish.cpp", FormOmborQoshish);
+USEFORM("UnitOmborOzgartirish.cpp", FormOmborOzgartirish);
+USEFORM("UnitXodimQoshish.cpp", FormXodimQoshish);
+USEFORM("UnitXodimOzgartirish.cpp", FormXodimOzgartirish);
+USEFORM("UnitKarkulyatsiya.cpp", FormKarkulyatsiya);
+USEFORM("UnitKarkulQoshish.cpp", FormKarkulQoshish);
+USEFORM("UnitKarkulOzgartirish.cpp", FormKarkulOzgartirish);
+USEFORM("UnitTolov.cpp", FormTolov);
+USEFORM("UnitStol.cpp", FormStol);
+//---------------------------------------------------------------------------
+int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
+{
+	try
+	{
+		Application->Initialize();
+		Application->MainFormOnTaskBar = true;
+		Application->CreateForm(__classid(TFormBosh), &FormBosh);
+		Application->CreateForm(__classid(TDataModule2), &DataModule2);
+		Application->CreateForm(__classid(TFormOmbor), &FormOmbor);
+		Application->CreateForm(__classid(TFormMenyu), &FormMenyu);
+		Application->CreateForm(__classid(TFormKategoriya), &FormKategoriya);
+		Application->CreateForm(__classid(TFormXodimlar), &FormXodimlar);
+		Application->CreateForm(__classid(TFormSotilganlar), &FormSotilganlar);
+		Application->CreateForm(__classid(TFormMenyuQoshish), &FormMenyuQoshish);
+		Application->CreateForm(__classid(TFormMenyuOzgartirish), &FormMenyuOzgartirish);
+		Application->CreateForm(__classid(TFormOmborQoshish), &FormOmborQoshish);
+		Application->CreateForm(__classid(TFormOmborOzgartirish), &FormOmborOzgartirish);
+		Application->CreateForm(__classid(TFormXodimQoshish), &FormXodimQoshish);
+		Application->CreateForm(__classid(TFormXodimOzgartirish), &FormXodimOzgartirish);
+		Application->CreateForm(__classid(TFormKarkulyatsiya), &FormKarkulyatsiya);
+		Application->CreateForm(__classid(TFormKarkulQoshish), &FormKarkulQoshish);
+		Application->CreateForm(__classid(TFormKarkulOzgartirish), &FormKarkulOzgartirish);
+		Application->CreateForm(__classid(TFormTolov), &FormTolov);
+		Application->CreateForm(__classid(TFormStol), &FormStol);
+		Application->Run();
+	}
+	catch (Exception &exception)
+	{
+		Application->ShowException(&exception);
+	}
+	catch (...)
+	{
+		try
+		{
+			throw Exception("");
+		}
+		catch (Exception &exception)
+		{
+			Application->ShowException(&exception);
+		}
+	}
+	return 0;
+}
+//---------------------------------------------------------------------------

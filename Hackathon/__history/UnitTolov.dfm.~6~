@@ -1,0 +1,449 @@
+object FormTolov: TFormTolov
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'FormTolov'
+  ClientHeight = 672
+  ClientWidth = 1243
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 29
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1243
+    Height = 89
+    Align = alTop
+    TabOrder = 0
+    ExplicitLeft = -40
+    ExplicitTop = -5
+    object Label7: TLabel
+      Left = 1
+      Top = 0
+      Width = 15
+      Height = 29
+      Caption = '0'
+    end
+    object Button8: TButton
+      Left = 1064
+      Top = 1
+      Width = 178
+      Height = 87
+      Align = alRight
+      Caption = 'Chiqish'
+      TabOrder = 0
+      OnClick = Button8Click
+    end
+  end
+  object FlowPanel1: TFlowPanel
+    Left = 758
+    Top = 89
+    Width = 485
+    Height = 583
+    Align = alRight
+    TabOrder = 1
+    object Button5: TButton
+      Left = 1
+      Top = 1
+      Width = 479
+      Height = 75
+      Caption = 'Tartiblash'
+      TabOrder = 0
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Left = 1
+      Top = 76
+      Width = 160
+      Height = 75
+      Caption = 'Button6'
+      TabOrder = 1
+      Visible = False
+      OnClick = Button6Click
+    end
+    object Button7: TButton
+      Left = 161
+      Top = 76
+      Width = 160
+      Height = 75
+      Caption = 'Button7'
+      TabOrder = 2
+      Visible = False
+      OnClick = Button7Click
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 89
+    Width = 753
+    Height = 583
+    Align = alLeft
+    TabOrder = 2
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 751
+      Height = 361
+      Align = alTop
+      DataSource = DataModule2.DataSourceVaqtinchasavdo
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+      ParentFont = False
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -24
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = [fsBold]
+      OnDrawColumnCell = DBGrid1DrawColumnCell
+      Columns = <
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'id'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Tov_id'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Tov_nomi'
+          Title.Alignment = taCenter
+          Title.Caption = 'Nomi'
+          Width = 219
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Narxi'
+          Title.Alignment = taCenter
+          Width = 150
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Miqdor'
+          Title.Alignment = taCenter
+          Title.Caption = 'Soni'
+          Width = 154
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Summa'
+          Title.Alignment = taCenter
+          Width = 208
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Kategoriya'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'JamiSumma'
+          Title.Alignment = taCenter
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Umsumma'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Q_X_Narxi'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Band'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Tolandi'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'Fish'
+          Title.Alignment = taCenter
+          Width = -1
+          Visible = False
+        end>
+    end
+    object Panel3: TPanel
+      Left = 1
+      Top = 344
+      Width = 751
+      Height = 238
+      Align = alBottom
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      ExplicitLeft = -31
+      object SpeedButton1: TSpeedButton
+        Left = 24
+        Top = 11
+        Width = 130
+        Height = 59
+        Caption = '+'
+        OnClick = SpeedButton1Click
+      end
+      object SpeedButton2: TSpeedButton
+        Left = 184
+        Top = 11
+        Width = 130
+        Height = 59
+        Caption = '-'
+        OnClick = SpeedButton2Click
+      end
+      object Label1: TLabel
+        Left = 186
+        Top = 75
+        Width = 172
+        Height = 25
+        Caption = 'Umumiy Summa'
+      end
+      object Label2: TLabel
+        Left = 186
+        Top = 106
+        Width = 138
+        Height = 25
+        Caption = 'Xizmat Xaqqi'
+      end
+      object Label3: TLabel
+        Left = 186
+        Top = 137
+        Width = 135
+        Height = 25
+        Caption = 'Jami Summa'
+      end
+      object Label4: TLabel
+        Left = 390
+        Top = 75
+        Width = 13
+        Height = 25
+        Caption = '0'
+      end
+      object Label5: TLabel
+        Left = 423
+        Top = 106
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label6: TLabel
+        Left = 390
+        Top = 137
+        Width = 13
+        Height = 25
+        Caption = '0'
+      end
+      object SpeedButton3: TSpeedButton
+        Left = 349
+        Top = 10
+        Width = 130
+        Height = 59
+        Caption = 'O'#39
+        OnClick = SpeedButton3Click
+      end
+      object Label8: TLabel
+        Left = 624
+        Top = 64
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label9: TLabel
+        Left = 613
+        Top = 114
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label10: TLabel
+        Left = 611
+        Top = 145
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label11: TLabel
+        Left = 640
+        Top = 48
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label12: TLabel
+        Left = 640
+        Top = 24
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label13: TLabel
+        Left = 390
+        Top = 106
+        Width = 13
+        Height = 25
+        Caption = '0'
+      end
+      object Label14: TLabel
+        Left = 651
+        Top = 127
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label15: TLabel
+        Left = 613
+        Top = 95
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label16: TLabel
+        Left = 80
+        Top = 136
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object Label17: TLabel
+        Left = 80
+        Top = 112
+        Width = 13
+        Height = 25
+        Caption = '0'
+        Visible = False
+      end
+      object SpeedButton4: TSpeedButton
+        Left = 504
+        Top = 8
+        Width = 225
+        Height = 61
+        Caption = 'O'#39'zi Bilan'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        OnClick = SpeedButton4Click
+      end
+      object Button1: TButton
+        Left = 0
+        Top = 176
+        Width = 170
+        Height = 60
+        Caption = 'Stol Almashtirish'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        WordWrap = True
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Left = 187
+        Top = 176
+        Width = 170
+        Height = 60
+        Caption = 'Oshpazga Jo'#39'natish'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        WordWrap = True
+      end
+      object Button3: TButton
+        Left = 377
+        Top = 176
+        Width = 170
+        Height = 60
+        Caption = 'Stol Xisobi'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Button4: TButton
+        Left = 570
+        Top = 176
+        Width = 170
+        Height = 60
+        Caption = 'To'#39'lash'
+        TabOrder = 3
+      end
+    end
+  end
+end

@@ -1,0 +1,201 @@
+object FormKarkulyatsiya: TFormKarkulyatsiya
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'FormKarkulyatsiya'
+  ClientHeight = 672
+  ClientWidth = 1194
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -21
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 25
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1194
+    Height = 83
+    Align = alTop
+    TabOrder = 0
+    object Button1: TButton
+      Left = 32
+      Top = 17
+      Width = 200
+      Height = 60
+      Caption = 'Qo'#39'shish'
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 264
+      Top = 17
+      Width = 200
+      Height = 60
+      Caption = 'O'#39'zgartirish'
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 496
+      Top = 17
+      Width = 200
+      Height = 60
+      Caption = 'O'#39'chirish'
+      TabOrder = 2
+    end
+    object Button4: TButton
+      Left = 720
+      Top = 17
+      Width = 200
+      Height = 60
+      Caption = 'Tozalash'
+      TabOrder = 3
+    end
+    object Button5: TButton
+      Left = 968
+      Top = 17
+      Width = 200
+      Height = 60
+      Caption = 'Hammasi'
+      TabOrder = 4
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 296
+    Top = 83
+    Width = 898
+    Height = 493
+    Align = alRight
+    DataSource = DataModule2.DataSourceKarkulyatsiya
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -21
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = [fsBold]
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'id'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 't_id'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Nomi'
+        Title.Alignment = taCenter
+        Width = 277
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Narxi'
+        Title.Alignment = taCenter
+        Width = 153
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Miqdor'
+        Title.Alignment = taCenter
+        Width = 142
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Summa'
+        Title.Alignment = taCenter
+        Width = 161
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Birligi'
+        Title.Alignment = taCenter
+        Width = 150
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Turi'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end>
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 576
+    Width = 1194
+    Height = 96
+    Align = alBottom
+    TabOrder = 2
+  end
+  object DBGrid2: TDBGrid
+    Left = 0
+    Top = 83
+    Width = 297
+    Height = 493
+    Align = alLeft
+    DataSource = DataModule2.DataSourceTovarlar
+    TabOrder = 3
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -21
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = [fsBold]
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'id'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Nomi'
+        Title.Alignment = taCenter
+        Width = 276
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Narxi'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Kategoriya'
+        Title.Alignment = taCenter
+        Width = -1
+        Visible = False
+      end>
+  end
+end

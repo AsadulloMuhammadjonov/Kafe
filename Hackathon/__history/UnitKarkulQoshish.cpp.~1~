@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitKarkulQoshish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormKarkulQoshish *FormKarkulQoshish;
+//---------------------------------------------------------------------------
+__fastcall TFormKarkulQoshish::TFormKarkulQoshish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

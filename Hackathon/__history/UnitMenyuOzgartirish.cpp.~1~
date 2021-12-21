@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitMenyuOzgartirish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormMenyuOzgartirish *FormMenyuOzgartirish;
+//---------------------------------------------------------------------------
+__fastcall TFormMenyuOzgartirish::TFormMenyuOzgartirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

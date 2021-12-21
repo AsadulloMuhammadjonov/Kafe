@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitXisobotH
+#define UnitXisobotH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormXisobot : public TForm
+{
+__published:	// IDE-managed Components
+	TButton *Button1;
+	TButton *Button2;
+	TButton *Button3;
+	TButton *Button4;
+	TButton *Button5;
+	TButton *Button6;
+	TButton *Button7;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormXisobot(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormXisobot *FormXisobot;
+//---------------------------------------------------------------------------
+#endif

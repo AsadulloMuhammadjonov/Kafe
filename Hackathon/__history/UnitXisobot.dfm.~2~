@@ -1,0 +1,75 @@
+object FormXisobot: TFormXisobot
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'FormXisobot'
+  ClientHeight = 375
+  ClientWidth = 848
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Tahoma'
+  Font.Style = [fsItalic]
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 29
+  object Button1: TButton
+    Left = 24
+    Top = 32
+    Width = 250
+    Height = 80
+    Caption = 'Sotuvlar Xisobi'
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 300
+    Top = 32
+    Width = 250
+    Height = 80
+    Caption = 'Sotib Olinganlar'
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 576
+    Top = 32
+    Width = 250
+    Height = 80
+    Caption = 'Button3'
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 24
+    Top = 152
+    Width = 250
+    Height = 80
+    Caption = 'Statistika Sotuvlar'
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 300
+    Top = 264
+    Width = 250
+    Height = 80
+    Caption = 'Xodimlar Xisobi'
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 300
+    Top = 152
+    Width = 250
+    Height = 80
+    Caption = 'Statistika Kategoriya'
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 576
+    Top = 152
+    Width = 250
+    Height = 80
+    Caption = 'Statistika Kaboblar'
+    TabOrder = 6
+  end
+end

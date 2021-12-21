@@ -1,0 +1,83 @@
+object FormKategoriya: TFormKategoriya
+  Left = 0
+  Top = 0
+  Caption = 'FormKategoriya'
+  ClientHeight = 528
+  ClientWidth = 390
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 29
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 232
+    Width = 390
+    Height = 296
+    Align = alBottom
+    DataSource = DataModule2.DataSourceKategoriya
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -24
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = [fsBold]
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id'
+        Visible = False
+      end
+      item
+        Alignment = taCenter
+        ButtonStyle = cbsNone
+        Expanded = False
+        FieldName = 'Nomi'
+        Title.Alignment = taCenter
+        Width = 370
+        Visible = True
+      end>
+  end
+  object Edit1: TEdit
+    Left = 56
+    Top = 24
+    Width = 273
+    Height = 37
+    Alignment = taCenter
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 88
+    Width = 153
+    Height = 57
+    Caption = 'Qo'#39'shish'
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 208
+    Top = 88
+    Width = 153
+    Height = 57
+    Caption = 'O'#39'chirish'
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 112
+    Top = 160
+    Width = 153
+    Height = 57
+    Caption = 'O'#39'zgartirish'
+    TabOrder = 4
+  end
+end

@@ -1,0 +1,32 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit3.h"
+#include "Unit1.h"
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormOmbor *FormOmbor;
+//---------------------------------------------------------------------------
+__fastcall TFormOmbor::TFormOmbor(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormOmbor::Button4Click(TObject *Sender)
+{
+Close();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormOmbor::LabeledEdit1Change(TObject *Sender)
+{
+DataModule2->ADOQueryMenyu->Close();
+DataModule2->ADOQueryMenyu->SQL->Text="select * from menyu where nomi like'%"+LabeledEdit1->Text.Trim()+"%'";
+DataModule2->ADOQueryMenyu->Open();
+}
+//---------------------------------------------------------------------------
+

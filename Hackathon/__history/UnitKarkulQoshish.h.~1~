@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitKarkulQoshishH
+#define UnitKarkulQoshishH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFormKarkulQoshish : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormKarkulQoshish(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormKarkulQoshish *FormKarkulQoshish;
+//---------------------------------------------------------------------------
+#endif

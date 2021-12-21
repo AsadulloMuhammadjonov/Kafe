@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitStolAlmashtirish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormStolAlmashtirish *FormStolAlmashtirish;
+//---------------------------------------------------------------------------
+__fastcall TFormStolAlmashtirish::TFormStolAlmashtirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

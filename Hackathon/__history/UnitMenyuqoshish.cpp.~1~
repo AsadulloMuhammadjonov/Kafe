@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UnitMenyuqoshish.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFormMenyuQoshish *FormMenyuQoshish;
+//---------------------------------------------------------------------------
+__fastcall TFormMenyuQoshish::TFormMenyuQoshish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
